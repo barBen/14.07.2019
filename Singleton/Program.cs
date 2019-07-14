@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,20 +6,38 @@ using System.Threading.Tasks;
 
 namespace Singleton
 {
-    class Program
+    public class Singleton
     {
-        static void Main(string[] args)
+
+        private static Singleton INSTANCE;
+
+        private static object key = new object();
+        private Singleton()
         {
 
-            Singleton s1 = Singleton.GetInstance();
-            Singleton s2 = Singleton.GetInstance();
-            Singleton s3 = Singleton.GetInstance();
-            Singleton s4 = Singleton.GetInstance();
+        }
 
-            if(s1 == s4)
+        public static Singleton GetInstance()
+        {
+            if (INSTANCE != null)
             {
-                Console.WriteLine();
+                return INSTANCE;
             }
+
+            lock (key)
+            {
+                if (INSTANCE == null)
+                {
+                    INSTANCE = new Singleton();
+                }
+            }
+
+            return INSTANCE;
+        }
+
+        public void printTime()
+        {
+            Console.WriteLine(DateTime.Now);
         }
     }
 }
