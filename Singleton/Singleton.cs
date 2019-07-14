@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,5 +35,9 @@ namespace Singleton
             return INSTANCE;
         }
 
+        public void printTime()
+        {
+            Console.WriteLine(DateTime.Now);
+        }
     }
 }
