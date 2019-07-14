@@ -6,38 +6,18 @@ using System.Threading.Tasks;
 
 namespace Singleton
 {
-    public class Singleton
+    class Program
     {
-
-        private static Singleton INSTANCE;
-
-        private static object key = new object();
-        private Singleton()
+        static void Main(string[] args)
         {
 
-        }
+            Singleton s1 = Singleton.GetInstance();
+            Singleton s2 = Singleton.GetInstance();
+            Singleton s3 = Singleton.GetInstance();
 
-        public static Singleton GetInstance()
-        {
-            if (INSTANCE != null)
-            {
-                return INSTANCE;
-            }
-
-            lock (key)
-            {
-                if (INSTANCE == null)
-                {
-                    INSTANCE = new Singleton();
-                }
-            }
-
-            return INSTANCE;
-        }
-
-        public void printTime()
-        {
-            Console.WriteLine(DateTime.Now);
+            s1.printTime();
+            s2.printTime();
+            s3.printTime();
         }
     }
 }
