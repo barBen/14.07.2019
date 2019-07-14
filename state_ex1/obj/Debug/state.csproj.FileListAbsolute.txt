@@ -1,0 +1,7 @@
+C:\Users\HackerU\source\repos\state\state\obj\Debug\state.csprojAssemblyReference.cache
+C:\Users\HackerU\source\repos\state\state\obj\Debug\state.csproj.CoreCompileInputs.cache
+C:\Users\HackerU\source\repos\state\state\bin\Debug\state.exe.config
+C:\Users\HackerU\source\repos\state\state\bin\Debug\state.exe
+C:\Users\HackerU\source\repos\state\state\bin\Debug\state.pdb
+C:\Users\HackerU\source\repos\state\state\obj\Debug\state.exe
+C:\Users\HackerU\source\repos\state\state\obj\Debug\state.pdb
