@@ -22,6 +22,7 @@ namespace State_ex2
                 else
                 {
                     ctx.State = new ILoginFailed(ctx);
+                    ctx.State.Login(password);
                 }
             }
        

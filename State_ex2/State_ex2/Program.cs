@@ -11,14 +11,16 @@ namespace State_ex2
         static void Main(string[] args)
         {
             Context ctx = new Context();
-            INewLogin newLogin = new INewLogin(ctx);
-            ctx.Init(newLogin);
+            INewLogin startState = new INewLogin(ctx);
+            ctx.Init(startState);
 
             ctx.newLogin("1");
             ctx.newLogin("1234");
-            ctx.newLogin("12345");
+            ctx.newLogin("12345");      
             ctx.newLogin("123");
             ctx.restart();
+            ctx.newLogin("12345");
+            ctx.newLogin("12345");
             ctx.newLogin("123");
         }
     }

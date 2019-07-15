@@ -19,7 +19,7 @@ namespace State_ex2
 
             public override void Restart()
             {
-                Console.WriteLine("SUCCESS -restart");
+                Console.WriteLine("restart");
                 ctx.State = new INewLogin(ctx);
             }
         }

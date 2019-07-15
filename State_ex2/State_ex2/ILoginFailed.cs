@@ -29,14 +29,14 @@ namespace State_ex2
             }
             else
             {
-                Console.WriteLine("Locked");
+                Console.WriteLine($"FAIL - with pass {password} and blocked");
                 ctx.State = new ILocked(ctx);
             }
         }
 
         public override void Restart()
         {
-            Console.WriteLine("FAILED - try restart");
+            Console.WriteLine("restart");
             ctx.State = new INewLogin(ctx);
         }
     }

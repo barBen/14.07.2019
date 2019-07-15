@@ -14,12 +14,12 @@ namespace State_ex2
 
         public override void Login(string password)
         {
-            Console.WriteLine("LOCKED - you are already locked..");
+            Console.WriteLine("you are LOCKED");
         }
 
         public override void Restart()
         {
-            Console.WriteLine("LOCKED - try restart");
+            Console.WriteLine("LOCKED - restart");
             ctx.State = new INewLogin(ctx);
         }
     }
