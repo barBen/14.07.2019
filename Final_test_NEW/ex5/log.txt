@@ -1,0 +1,4 @@
+
+FATAL: fatal log
+ERROR: error log
+ERROR: error log
