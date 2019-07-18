@@ -47,7 +47,7 @@ namespace ex12
 
         public override string ToString()
         {
-            return $"component: \n  Enclosure: {component[0]} \n  Motherboard: {component[1]} \n  Processor: {component[2]} \n  GraphicCard: {component[3]} \n  Memory: {component[4]} \n";
+            return $"\n  Enclosure: {component[0]} \n  Motherboard: {component[1]} \n  Processor: {component[2]} \n  GraphicCard: {component[3]} \n  Memory: {component[4]} \n";
         }
     }
 }

@@ -10,6 +10,11 @@ namespace ex12
     {
         static void Main(string[] args)
         {
+
+            ComputerFactory factory = new ComputerFactory();
+            Console.WriteLine("WORK: " + factory.createComputer("work"));
+            Console.WriteLine("GAME: " + factory.createComputer("game"));
+            Console.WriteLine("LIVING ROOM: " + factory.createComputer("living room"));
         }
     }
 }
