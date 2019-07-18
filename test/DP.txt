@@ -1,0 +1,12 @@
+1 - state
+2 - composit
+3 - proxy + facde
+4
+5 - chain of resp
+6 - flywight
+
+8 - template method 
+
+10 - decoretor
+11 - memento
+12 - builder
