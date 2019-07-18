@@ -11,7 +11,7 @@ namespace Strategy
         static void Main(string[] args)
         {
 
-            NumberCollection collection = new NumberCollection(new MergeSort());
+            NumberCollection collection = new NumberCollection();
 
             collection.add(1);
             collection.sort();

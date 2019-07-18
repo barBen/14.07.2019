@@ -12,9 +12,9 @@ namespace Strategy
         Isort sorter;
         private const int SORT = 3;
 
-        public NumberCollection(Isort sorter)
+        public NumberCollection()
         {
-            this.sorter = sorter;
+            this.sorter = new MergeSort();
         }
 
         public void add(int toAdd)
